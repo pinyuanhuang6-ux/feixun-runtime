@@ -1,7 +1,8 @@
 {
   "schema": "feixun-runtime-distribution/v1",
-  "publishedAt": "2026-09-09T13:20:27.395Z",
+  "publishedAt": "2026-09-09T13:26:20.406Z",
   "feixunSha256": "7777D318F57F49C338CAFF26AF36969E368116CB22FFBCD75AD80D4E546CDE44",
   "worldbookVersion": "0.2.1",
+  "worldbookPath": "wuthering-waves-common-worldbook-v0.2.1.json",
   "worldbookSha256": "00384220D216000F50D28B90ADDD5B69997EBD8A24220AD7DA601529B081A2F9"
 }
