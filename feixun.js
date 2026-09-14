@@ -6,7 +6,7 @@
   const cacheName = 'feixun-verified-runtime-v1';
   const releaseTimeoutMs = Number(configuration.releaseTimeoutMs) || 12_000;
   const artifactTimeoutMs = Number(configuration.artifactTimeoutMs) || 180_000;
-  const hedgeDelayMs = Number(configuration.hedgeDelayMs) || 6_000;
+  const hedgeDelayMs = Number(configuration.hedgeDelayMs) || 2_000;
   const directHttp = host.location?.protocol === 'http:';
   const releaseUrls = [
     'https://gcore.jsdelivr.net/gh/pinyuanhuang6-ux/feixun-runtime@main/release.json',
@@ -92,18 +92,36 @@
 
   async function discoverRelease() {
     status('checking_release');
-    const attempts = await Promise.allSettled(releaseUrls.map(async url => {
-      const controller = new AbortController();
-      const bytes = await fetchBytes(url, releaseTimeoutMs, controller);
-      const value = JSON.parse(new TextDecoder().decode(bytes));
-      if (!validateRelease(value)) throw failure('INVALID_RELEASE', '版本指针缺少不可变核心信息');
-      return { value, url };
-    }));
-    const valid = attempts.filter(item => item.status === 'fulfilled').map(item => item.value);
+    const controllers = releaseUrls.map(() => new AbortController());
+    const valid = [];
+    const failures = [];
+    const attempts = releaseUrls.map(async (url, index) => {
+      try {
+        const bytes = await fetchBytes(url, releaseTimeoutMs, controllers[index]);
+        const value = JSON.parse(new TextDecoder().decode(bytes));
+        if (!validateRelease(value)) throw failure('INVALID_RELEASE', '版本指针缺少不可变核心信息');
+        const result = { value, url };
+        valid.push(result);
+        return result;
+      } catch (error) {
+        failures.push(`${new URL(url).host}: ${error?.code || error?.message || 'failed'}`);
+        throw error;
+      }
+    });
+    try {
+      await Promise.any(attempts);
+      await Promise.race([
+        Promise.allSettled(attempts),
+        new Promise(resolve => setTimeout(resolve, 2_500)),
+      ]);
+    } catch {
+      await Promise.allSettled(attempts);
+    } finally {
+      controllers.forEach(controller => controller.abort());
+    }
     valid.sort((left, right) => Date.parse(right.value.publishedAt) - Date.parse(left.value.publishedAt));
     if (valid.length) return valid[0];
-    const reasons = attempts.map((item, index) => `${new URL(releaseUrls[index]).host}: ${item.reason?.code || item.reason?.message || 'failed'}`);
-    throw failure('RELEASE_UNAVAILABLE', `版本信息不可用：${reasons.join('；')}`);
+    throw failure('RELEASE_UNAVAILABLE', `版本信息不可用：${failures.join('；')}`);
   }
 
   async function openRuntimeCache() {

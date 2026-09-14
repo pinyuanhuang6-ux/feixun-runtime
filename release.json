@@ -1,13 +1,13 @@
 {
   "schema": "feixun-runtime-distribution/v1",
-  "publishedAt": "2026-09-14T17:18:29.538Z",
-  "feixunSha256": "5146541DD1CF1D1D80FC5C5A311A0EE6A9C0E96E03F51272495A8D5294C0EA28",
+  "publishedAt": "2026-09-14T17:38:30.932Z",
+  "feixunSha256": "87E470A5FDA4D12FE89985EA5A37BB9CA14CB9A9636FCA2D354A20D476B5AD6B",
   "feixunRuntime": {
     "schema": "feixun-runtime-artifacts/v1",
     "bootstrap": {
       "path": "feixun.js",
-      "bytes": 11618,
-      "sha256": "5146541DD1CF1D1D80FC5C5A311A0EE6A9C0E96E03F51272495A8D5294C0EA28"
+      "bytes": 11979,
+      "sha256": "87E470A5FDA4D12FE89985EA5A37BB9CA14CB9A9636FCA2D354A20D476B5AD6B"
     },
     "files": [
       {
