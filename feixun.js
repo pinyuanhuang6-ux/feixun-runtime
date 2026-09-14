@@ -7,7 +7,14 @@
   const releaseTimeoutMs = Number(configuration.releaseTimeoutMs) || 12_000;
   const artifactTimeoutMs = Number(configuration.artifactTimeoutMs) || 180_000;
   const hedgeDelayMs = Number(configuration.hedgeDelayMs) || 2_000;
-  const directHttp = host.location?.protocol === 'http:';
+  const pageProtocol = (() => {
+    try {
+      const parentProtocol = host.parent?.location?.protocol;
+      if (parentProtocol === 'http:' || parentProtocol === 'https:') return parentProtocol;
+    } catch { /* cross-origin parent; use the current realm */ }
+    return host.location?.protocol || '';
+  })();
+  const directHttp = pageProtocol === 'http:';
   const releaseUrls = [
     'https://gcore.jsdelivr.net/gh/pinyuanhuang6-ux/feixun-runtime@main/release.json',
     ...(directHttp ? ['http://www.asahizzz.top/feixun-runtime/runtime.php?file=release.json'] : []),
