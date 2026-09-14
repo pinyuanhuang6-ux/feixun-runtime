@@ -1,7 +1,29 @@
 {
   "schema": "feixun-runtime-distribution/v1",
-  "publishedAt": "2026-09-11T15:29:08.430Z",
-  "feixunSha256": "0A07246A42EBD00E571ECBFE56C00C3748CEC0761829D9238AF2522F83D075FB",
+  "publishedAt": "2026-09-14T17:18:29.538Z",
+  "feixunSha256": "5146541DD1CF1D1D80FC5C5A311A0EE6A9C0E96E03F51272495A8D5294C0EA28",
+  "feixunRuntime": {
+    "schema": "feixun-runtime-artifacts/v1",
+    "bootstrap": {
+      "path": "feixun.js",
+      "bytes": 11618,
+      "sha256": "5146541DD1CF1D1D80FC5C5A311A0EE6A9C0E96E03F51272495A8D5294C0EA28"
+    },
+    "files": [
+      {
+        "role": "feixun",
+        "path": "feixun-core-D81D912064439BEAAE3EDDEDBF99EE95924B83C8178AB8F20F298941A36AEDDC.js",
+        "bytes": 4693504,
+        "sha256": "D81D912064439BEAAE3EDDEDBF99EE95924B83C8178AB8F20F298941A36AEDDC"
+      },
+      {
+        "role": "life",
+        "path": "feixun-life-9D8B36C9FDC579865F7A6BC884C9AF1A46E471A8ED91991D43836CA2A2F3A6D5.js",
+        "bytes": 1488830,
+        "sha256": "9D8B36C9FDC579865F7A6BC884C9AF1A46E471A8ED91991D43836CA2A2F3A6D5"
+      }
+    ]
+  },
   "worldbookVersion": "0.2.1",
   "worldbookPath": "wuthering-waves-common-worldbook-v0.2.1.json",
   "worldbookSha256": "00384220D216000F50D28B90ADDD5B69997EBD8A24220AD7DA601529B081A2F9"
