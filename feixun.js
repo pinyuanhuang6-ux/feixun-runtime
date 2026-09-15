@@ -16,15 +16,17 @@
   })();
   const directHttp = pageProtocol === 'http:';
   const releaseUrls = [
-    'https://gcore.jsdelivr.net/gh/pinyuanhuang6-ux/feixun-runtime@main/release.json',
+    'https://www.asahizzz.top/feixun-runtime/runtime.php?file=release.json',
     ...(directHttp ? ['http://www.asahizzz.top/feixun-runtime/runtime.php?file=release.json'] : []),
+    'https://gcore.jsdelivr.net/gh/pinyuanhuang6-ux/feixun-runtime@main/release.json',
     'https://fastly.jsdelivr.net/gh/pinyuanhuang6-ux/feixun-runtime@main/release.json',
     'https://raw.githubusercontent.com/pinyuanhuang6-ux/feixun-runtime/main/release.json',
     'https://gist.githubusercontent.com/pinyuanhuang6-ux/88ffc1135b270ac044d85dbef3b5b8e6/raw/release.json',
   ];
   const artifactSources = [
-    { base: 'https://gcore.jsdelivr.net/gh/pinyuanhuang6-ux/feixun-runtime@main/' },
+    { base: 'https://www.asahizzz.top/feixun-runtime/runtime.php?file=', query: true },
     ...(directHttp ? [{ base: 'http://www.asahizzz.top/feixun-runtime/runtime.php?file=', query: true }] : []),
+    { base: 'https://gcore.jsdelivr.net/gh/pinyuanhuang6-ux/feixun-runtime@main/' },
     { base: 'https://fastly.jsdelivr.net/gh/pinyuanhuang6-ux/feixun-runtime@main/' },
     { base: 'https://raw.githubusercontent.com/pinyuanhuang6-ux/feixun-runtime/main/' },
     { base: 'https://gist.githubusercontent.com/pinyuanhuang6-ux/88ffc1135b270ac044d85dbef3b5b8e6/raw/' },
