@@ -1,6 +1,6 @@
 {
   "schema": "feixun-runtime-distribution/v1",
-  "publishedAt": "2026-10-02T12:41:17.439Z",
+  "publishedAt": "2026-10-02T23:53:24.536Z",
   "feixunSha256": "6551DADF7CABBAF36E3065ECDA95BEB13C3299DD5643EE6CA023A965F264707C",
   "feixunRuntime": {
     "schema": "feixun-runtime-artifacts/v1",
@@ -12,9 +12,9 @@
     "files": [
       {
         "role": "feixun",
-        "path": "feixun-core-702577A6F32E28F9CB9E4AAA972F9BDB0BF88D080BB86C9008B6A44449EEFEA8.js",
-        "bytes": 4704280,
-        "sha256": "702577A6F32E28F9CB9E4AAA972F9BDB0BF88D080BB86C9008B6A44449EEFEA8"
+        "path": "feixun-core-CDCE3D1F865ACF84D3A06399A652C52A006E80FA9674D1A41842EB68C161EA0D.js",
+        "bytes": 943215,
+        "sha256": "CDCE3D1F865ACF84D3A06399A652C52A006E80FA9674D1A41842EB68C161EA0D"
       },
       {
         "role": "life",
@@ -26,7 +26,7 @@
   },
   "runtimeContract": {
     "schema": "feixun-runtime-contract/v1",
-    "feixunSha256": "702577A6F32E28F9CB9E4AAA972F9BDB0BF88D080BB86C9008B6A44449EEFEA8",
+    "feixunSha256": "CDCE3D1F865ACF84D3A06399A652C52A006E80FA9674D1A41842EB68C161EA0D",
     "lifeSha256": "EEAE3AC3DA957E55AE6A2E40AE22F46A94697BD3F9FE0FAF57F9D6CE7FE307C5",
     "contactIds": [
       "10001",
@@ -82,6 +82,722 @@
       "10051"
     ],
     "contactRegistrySha256": "612FC2886D67F5407196533A7324541919B2C03E7C724CCC2D8D6AE986E3A790"
+  },
+  "assetRuntime": {
+    "schema": "feixun-runtime-assets/v1",
+    "coreSha256": "CDCE3D1F865ACF84D3A06399A652C52A006E80FA9674D1A41842EB68C161EA0D",
+    "files": [
+      {
+        "path": "feixun-asset-A853BFF3FB2E7B95C0D3D8FE145A65BD9A4CEDE378426D3D1BCECDD8AE21DF43.json",
+        "sha256": "A853BFF3FB2E7B95C0D3D8FE145A65BD9A4CEDE378426D3D1BCECDD8AE21DF43",
+        "bytes": 173801,
+        "assetSha256": "8E0B7DFB77514069C7C79352C953E37DA3712AD417F32DB50603C442ED91915B",
+        "assetBytes": 130228,
+        "mime": "image/png",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-CE61026CC780AEDED37761162518B4EA9C1B3F9AD132233D346C902F3A0E2AAA.json",
+        "sha256": "CE61026CC780AEDED37761162518B4EA9C1B3F9AD132233D346C902F3A0E2AAA",
+        "bytes": 112192,
+        "assetSha256": "2BBC901759EBA967262F0CA0A40490B3C792E07AC489F7664A26C190CC8C73CB",
+        "assetBytes": 84022,
+        "mime": "image/png",
+        "width": 200,
+        "height": 200
+      },
+      {
+        "path": "feixun-asset-426642CDE007EEB413A1ABF97F7FE6A3E13B978BC867EC29A0145E7DFEFAC64D.json",
+        "sha256": "426642CDE007EEB413A1ABF97F7FE6A3E13B978BC867EC29A0145E7DFEFAC64D",
+        "bytes": 151905,
+        "assetSha256": "B7E54030B4F888DFA203AD5A4804DD08BEFDBC5DDE8DCC176480FD125EAE155D",
+        "assetBytes": 113807,
+        "mime": "image/png",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-390AC71DDB86DC021CE1BA3C5F716DC7E90BDAD4DBD413B150DE6F616AFE8965.json",
+        "sha256": "390AC71DDB86DC021CE1BA3C5F716DC7E90BDAD4DBD413B150DE6F616AFE8965",
+        "bytes": 204717,
+        "assetSha256": "43DEF51B6B4B6CE8B1E7C971C60A7837465907BA1F8CA8ED2BB6859CA1502EED",
+        "assetBytes": 153415,
+        "mime": "image/png",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-0E2941BFA68F58B334B96AABA6D2F383B3B2CBC7F0B81BA97D31370AEA4FF740.json",
+        "sha256": "0E2941BFA68F58B334B96AABA6D2F383B3B2CBC7F0B81BA97D31370AEA4FF740",
+        "bytes": 197201,
+        "assetSha256": "29AC7F246CC4C0CD1B774F514C777AE0F7FF41B38CCEC7F9E8BBD05962EACB4D",
+        "assetBytes": 147778,
+        "mime": "image/png",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-FE9A2F02EE2A4B0F23B6B980B1C63E6E65A143F5C8BE1F6F4C37A0A6ED6AC06A.json",
+        "sha256": "FE9A2F02EE2A4B0F23B6B980B1C63E6E65A143F5C8BE1F6F4C37A0A6ED6AC06A",
+        "bytes": 164769,
+        "assetSha256": "73E815B79D448E80B0EB11B465ED9A6326858CBB86DFAEA59DB42F7551AE828C",
+        "assetBytes": 123454,
+        "mime": "image/png",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-7FAD2DCBFCB2FC9AD5667D55774054B5C7D5D845755BD9FBDF7CF58B9D1CD881.json",
+        "sha256": "7FAD2DCBFCB2FC9AD5667D55774054B5C7D5D845755BD9FBDF7CF58B9D1CD881",
+        "bytes": 44740,
+        "assetSha256": "FD489446EB2ACEC6405AF65B3203D37856C111BAADAE8D3FC64E52B037C1A83D",
+        "assetBytes": 33433,
+        "mime": "image/png",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-803456F421DB0014338BEA72E05626837AAEF5EE6B3C25A847231C65B209105A.json",
+        "sha256": "803456F421DB0014338BEA72E05626837AAEF5EE6B3C25A847231C65B209105A",
+        "bytes": 191561,
+        "assetSha256": "8BFB237791A5EE50D3905F0FFAE064E65327E98DDCDAA10CBDF8C49304BEEDAD",
+        "assetBytes": 143550,
+        "mime": "image/png",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-D0F6271225F1FA75F31B4BA03426F7031B5077759A69776BB4B49D9AC4A7E768.json",
+        "sha256": "D0F6271225F1FA75F31B4BA03426F7031B5077759A69776BB4B49D9AC4A7E768",
+        "bytes": 54620,
+        "assetSha256": "9067756522AC0CFD0C5659F2E6A62D2317BAEB43A9F9668021862F2CB424747A",
+        "assetBytes": 40844,
+        "mime": "image/png",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-E6C249EB46074529921A24E9027767606D3EA4A623125FD96FD2CEBCD8212586.json",
+        "sha256": "E6C249EB46074529921A24E9027767606D3EA4A623125FD96FD2CEBCD8212586",
+        "bytes": 175441,
+        "assetSha256": "2FF4C1A3888F19192910108E0DAD5E3431BED537E9376854D1F4D5CFE51930B7",
+        "assetBytes": 131460,
+        "mime": "image/png",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-19F38C6835712AF52B51AE10AA1AE0ABEF130D7F2DD97BD0AAB5462BF9D67EFB.json",
+        "sha256": "19F38C6835712AF52B51AE10AA1AE0ABEF130D7F2DD97BD0AAB5462BF9D67EFB",
+        "bytes": 40129,
+        "assetSha256": "4C3902047763390368450FDFBD1D832C853CA84E8A15AEEC8FB3B9BA73D96AAB",
+        "assetBytes": 29974,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-33A082646C9645789B84B9C24D5F9DF49E14282812D25F9FE542E625266C47C3.json",
+        "sha256": "33A082646C9645789B84B9C24D5F9DF49E14282812D25F9FE542E625266C47C3",
+        "bytes": 35625,
+        "assetSha256": "9FFA17810BF81AF1950D22EE8D8D78A455F59A2AC85FDF0D526F78842E74E5C8",
+        "assetBytes": 26598,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-6515E46C23C7EE00A6025AFB8549FAAE8480F833EDE258DFA1E98E390B60661E.json",
+        "sha256": "6515E46C23C7EE00A6025AFB8549FAAE8480F833EDE258DFA1E98E390B60661E",
+        "bytes": 30509,
+        "assetSha256": "07AC1BE26F7D598028B7325F4D97029CC68C80F5F950373397D9293963CEC6AD",
+        "assetBytes": 22760,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-5D86EE9064EBAFDE9101E8707E8BAA95C07240B97D54B819A0247066B681247C.json",
+        "sha256": "5D86EE9064EBAFDE9101E8707E8BAA95C07240B97D54B819A0247066B681247C",
+        "bytes": 22837,
+        "assetSha256": "CEAAF125600C1ADBDD5A2CF1538A76D45DE86B91C544EA3F31A6509F0E2229EF",
+        "assetBytes": 17006,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-6FD9F36D77EDE437DB557B1875B349358C637E087DBD1F395BE76116F43EB230.json",
+        "sha256": "6FD9F36D77EDE437DB557B1875B349358C637E087DBD1F395BE76116F43EB230",
+        "bytes": 18793,
+        "assetSha256": "4B643191898FF31736DC61037FA8108AFB49005B9ACB369EFEABBE241A772119",
+        "assetBytes": 13974,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-4EC455A1E2231082905B4DF72169ADC18E85945B9CEC8F912FA63000EDDEFB90.json",
+        "sha256": "4EC455A1E2231082905B4DF72169ADC18E85945B9CEC8F912FA63000EDDEFB90",
+        "bytes": 32401,
+        "assetSha256": "94A3398D59D8CA0776F5805E9EC7CD0E5ADF8FC34BEE746A95ECBC0CBE808784",
+        "assetBytes": 24178,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-04D76899F955D9F9114759BAF178A9F930D3BFA27D67BED73B82D57FD6D799DA.json",
+        "sha256": "04D76899F955D9F9114759BAF178A9F930D3BFA27D67BED73B82D57FD6D799DA",
+        "bytes": 14089,
+        "assetSha256": "5EDF670AE06AE678490B927531C5EE99D02EC6A744E9CCAF1DF263C0E0C226CC",
+        "assetBytes": 10446,
+        "mime": "image/webp",
+        "width": 234,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-D720FB2A91F1C5EFCEC36B3C20CCDD3727BE32405A29E3C4BEF9FA6D29BF851F.json",
+        "sha256": "D720FB2A91F1C5EFCEC36B3C20CCDD3727BE32405A29E3C4BEF9FA6D29BF851F",
+        "bytes": 38453,
+        "assetSha256": "2F6D1CAE024A66136C2615CE971CDCD652A56F53F4911A95DD61F5C4B686DF26",
+        "assetBytes": 28718,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-A03141058BF095D8366A56A23C8C9EAE4D937A9A0AFA2764AC2BED8A4EC3A19A.json",
+        "sha256": "A03141058BF095D8366A56A23C8C9EAE4D937A9A0AFA2764AC2BED8A4EC3A19A",
+        "bytes": 32593,
+        "assetSha256": "B7F0A1982D7F4B847D04BC4FCE8B0A266B4F726F8B2B966284FBA545A16D9519",
+        "assetBytes": 24322,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-446B2263DD9F2A29678ADE7C3A495C79D316D10585856F7F43039DE52DE0D1FF.json",
+        "sha256": "446B2263DD9F2A29678ADE7C3A495C79D316D10585856F7F43039DE52DE0D1FF",
+        "bytes": 35393,
+        "assetSha256": "CA4E7EAFC13C3C2D360986A33D51A67564B9A9F429EFBC401BF300E6B96A9F55",
+        "assetBytes": 26422,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-54C85B885BFC7ECE01AEEAED9800ABB0677B7ACF544DF9FA6DFE54FCFC3080DF.json",
+        "sha256": "54C85B885BFC7ECE01AEEAED9800ABB0677B7ACF544DF9FA6DFE54FCFC3080DF",
+        "bytes": 38613,
+        "assetSha256": "632B055615930BDCFD5A1BA507CFFDC7843A9992A243D19C06E72376BAAB62BB",
+        "assetBytes": 28838,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-D77FEC084714DA4AFB9495A7BB6273E4C18021FFCA177FD0861DCCE2DF012C9F.json",
+        "sha256": "D77FEC084714DA4AFB9495A7BB6273E4C18021FFCA177FD0861DCCE2DF012C9F",
+        "bytes": 33685,
+        "assetSha256": "D4A02C3E6283A74C437EAD3EF24ABDB502BCECF15D15C8EF6D78DFEA2A1AFB70",
+        "assetBytes": 25142,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-6D56C13C3062E03886021F1498076CEBC1609F463A7D5591D786C809A39A0695.json",
+        "sha256": "6D56C13C3062E03886021F1498076CEBC1609F463A7D5591D786C809A39A0695",
+        "bytes": 35049,
+        "assetSha256": "D6941FA8077BAE30FE8932304C14DDB180B146FD09D5D59DC7F1FAF2C66595D5",
+        "assetBytes": 26164,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-E0332C97C0912A10A75BDB508C69563AE548FB8C28150C131AFA76F2A1DDB5D5.json",
+        "sha256": "E0332C97C0912A10A75BDB508C69563AE548FB8C28150C131AFA76F2A1DDB5D5",
+        "bytes": 32417,
+        "assetSha256": "366D1A708E095592345EE85EE09D699A41C4653FA195F911786993F59D85B49B",
+        "assetBytes": 24192,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-8E9C92F9ED22EF7410871116889DCE3966BC030BD44A190E3BAAC3723AC9C707.json",
+        "sha256": "8E9C92F9ED22EF7410871116889DCE3966BC030BD44A190E3BAAC3723AC9C707",
+        "bytes": 13036,
+        "assetSha256": "D17702CC9B64FC3D5A4BA6E1DBF502E1257D6ACE922DBAA0E674B32B985B50B2",
+        "assetBytes": 9656,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-445533A0D72FD60DEC0F0C91F0CEB23FC54AA698AB4C5B70D827F02F1AB758B1.json",
+        "sha256": "445533A0D72FD60DEC0F0C91F0CEB23FC54AA698AB4C5B70D827F02F1AB758B1",
+        "bytes": 16505,
+        "assetSha256": "9A49C17485CAD75F158EA93EEE4DD230C5979D66559F17D296F6661A9876049C",
+        "assetBytes": 12258,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-9611F332744BB14A1A1624A301F32A2EA3E9DE0810486EAD8B71B0F7CF86411B.json",
+        "sha256": "9611F332744BB14A1A1624A301F32A2EA3E9DE0810486EAD8B71B0F7CF86411B",
+        "bytes": 31457,
+        "assetSha256": "CA0AA25C61432E4068614522D020F6DF0D6B32A88D69B0613DAA5BDC7084EEBF",
+        "assetBytes": 23472,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-FB0D828BEC64B2BB82F94122DBEB26EA51A9B5D3507F33ECDBB8834D9B1B10D5.json",
+        "sha256": "FB0D828BEC64B2BB82F94122DBEB26EA51A9B5D3507F33ECDBB8834D9B1B10D5",
+        "bytes": 14753,
+        "assetSha256": "3BE9A760230388254E941317AAF463746FAB9BD53E9CB06C3D2B94013959D9B3",
+        "assetBytes": 10944,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-CEAC09051D6C9A146D8693C89A4A2B4B09F0673A841038998C4DF4D32C41B2F8.json",
+        "sha256": "CEAC09051D6C9A146D8693C89A4A2B4B09F0673A841038998C4DF4D32C41B2F8",
+        "bytes": 41261,
+        "assetSha256": "E3BB87611063DCD9EC9D43C936C3C42B90ED365D434F4F3ABA5C988AF651D773",
+        "assetBytes": 30824,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-E35C57227836996A976D28C6A23A134351E0F61E52A7685C38E17CFB33A52EEC.json",
+        "sha256": "E35C57227836996A976D28C6A23A134351E0F61E52A7685C38E17CFB33A52EEC",
+        "bytes": 22525,
+        "assetSha256": "F3C45D9C2F205BAD0D947FF5D122C8AFEB4EB8B18DD5672011386BD54B1357FB",
+        "assetBytes": 16772,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-6CA85C14D712A6A1C5B34D3151330D809F427F64328A72D37D872B4A88A9E94B.json",
+        "sha256": "6CA85C14D712A6A1C5B34D3151330D809F427F64328A72D37D872B4A88A9E94B",
+        "bytes": 37377,
+        "assetSha256": "E335DA9BF2574F8DF2A5B0DDD96408529103449BBE7A9F414CFE728B10858486",
+        "assetBytes": 27912,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-2C8D61DA5EF11BF99ECC07B2154622439F9E9E1C201C1DD5AAFC1034D6330045.json",
+        "sha256": "2C8D61DA5EF11BF99ECC07B2154622439F9E9E1C201C1DD5AAFC1034D6330045",
+        "bytes": 17377,
+        "assetSha256": "52C04BBCA1AE284D5859C5EC7C7DE0F0B9A822622F5EB866C5E71D95BC93CC92",
+        "assetBytes": 12910,
+        "mime": "image/webp",
+        "width": 414,
+        "height": 512
+      },
+      {
+        "path": "feixun-asset-02DA2615A64005A1F767175A22A14385F64AFCB6646D4E5788CA4D1F0493061C.json",
+        "sha256": "02DA2615A64005A1F767175A22A14385F64AFCB6646D4E5788CA4D1F0493061C",
+        "bytes": 38513,
+        "assetSha256": "94C632A8079C7A634DDEE48288AA4C7AAECB722E1E2FAA7725A5A6E686F60794",
+        "assetBytes": 28762,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-E7CBB05276422BB0730656E5CB0682BF59D696A5067EF4C1530965F49759EA05.json",
+        "sha256": "E7CBB05276422BB0730656E5CB0682BF59D696A5067EF4C1530965F49759EA05",
+        "bytes": 31449,
+        "assetSha256": "DA84A061E054EF93D369EEDC70EF220ACF98B1D99D431784507487D5EA62E25A",
+        "assetBytes": 23464,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-D07C7E86F01931C875C3E1631A959BBD9FA15D8166627E3BA7636BDB79C4DBA7.json",
+        "sha256": "D07C7E86F01931C875C3E1631A959BBD9FA15D8166627E3BA7636BDB79C4DBA7",
+        "bytes": 28313,
+        "assetSha256": "B9103AAFCB515996973D6071B2381E36A631063587E14A23D702583E31E43246",
+        "assetBytes": 21112,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-D536E7F9B2BE43A19EF2AC158F0D0269B530D7CCF26FDF50B134860FA1EE20FF.json",
+        "sha256": "D536E7F9B2BE43A19EF2AC158F0D0269B530D7CCF26FDF50B134860FA1EE20FF",
+        "bytes": 30225,
+        "assetSha256": "41848797FD01DE33EAAC5A74CF7028F9CE6643C28C40ED0010D66402B10C41FB",
+        "assetBytes": 22546,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-86F0277F413EB8DB62E6F858D28B1C1D2DFE793337D98CBD88A8A47DBB55091C.json",
+        "sha256": "86F0277F413EB8DB62E6F858D28B1C1D2DFE793337D98CBD88A8A47DBB55091C",
+        "bytes": 37249,
+        "assetSha256": "9A866FC587F3636BF99A06D8541FAB7C127C5F352A012E2D6E0649DDC6A49FD1",
+        "assetBytes": 27814,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-3B162C04F5530F1EB2368DA0768023CF3667F5ED209F378814053436636CDF6B.json",
+        "sha256": "3B162C04F5530F1EB2368DA0768023CF3667F5ED209F378814053436636CDF6B",
+        "bytes": 36705,
+        "assetSha256": "AFC6FA65C38E8F2E12DCA68D822257CC272A5827058E98B177C86E4BF34053F1",
+        "assetBytes": 27408,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-A8B078E57E8022FEF16A267B66CE6EAAC4DC3039ADD617D69F7D939672EF0B09.json",
+        "sha256": "A8B078E57E8022FEF16A267B66CE6EAAC4DC3039ADD617D69F7D939672EF0B09",
+        "bytes": 25825,
+        "assetSha256": "4C1CF2600FC4020E459E442C907DD748DD50ED7122892A2B475B720DF50A0B11",
+        "assetBytes": 19248,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-985A0FA6FC6240E8045E35DD0239AF722CD509BB358C9D3539B10EA7FE58DE5A.json",
+        "sha256": "985A0FA6FC6240E8045E35DD0239AF722CD509BB358C9D3539B10EA7FE58DE5A",
+        "bytes": 32469,
+        "assetSha256": "EAD99145609CF2F7747CED911F63E20000A0341AB6C74CAF3865628CAC7921F0",
+        "assetBytes": 24230,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-F6746E31BA050F4C17EEB84DCEDB3D3E4B2BA81016C68707B2E78F100C1569BE.json",
+        "sha256": "F6746E31BA050F4C17EEB84DCEDB3D3E4B2BA81016C68707B2E78F100C1569BE",
+        "bytes": 41105,
+        "assetSha256": "FB68CF3F360EBC93E22697EB7558DFE38CE22117FD13C13A5D42ADE8478F5D13",
+        "assetBytes": 30708,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-55CE0974E2AD91F743F14B0C7537E82AD524F208D79E3AABFC4A69CFDA30D6B8.json",
+        "sha256": "55CE0974E2AD91F743F14B0C7537E82AD524F208D79E3AABFC4A69CFDA30D6B8",
+        "bytes": 36361,
+        "assetSha256": "5458FA31D339BE239EE79B4AE3359ED63337E1923540AEC63E81EBC03E4F5167",
+        "assetBytes": 27148,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-BBF22CD29BED49E4C31C62979C3D751524F68891DB83CA9712E4DC8497BB65B0.json",
+        "sha256": "BBF22CD29BED49E4C31C62979C3D751524F68891DB83CA9712E4DC8497BB65B0",
+        "bytes": 33649,
+        "assetSha256": "665288C7D2CBB3F497654FD491931AB8F87D449785599F9F8C750D13CFB6C1FB",
+        "assetBytes": 25116,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-B46EC17C426B97207769345E62AA8E9B82F99B285F5C7578C03374F4F90A1464.json",
+        "sha256": "B46EC17C426B97207769345E62AA8E9B82F99B285F5C7578C03374F4F90A1464",
+        "bytes": 17317,
+        "assetSha256": "DCA292D78B743D77B0F9E0666E64B7BA764336A79359743F3C6C2CB6BC2C0460",
+        "assetBytes": 12866,
+        "mime": "image/webp",
+        "width": 1024,
+        "height": 765
+      },
+      {
+        "path": "feixun-asset-99087A1042DAB85D8DF16479E61885D416FCF0223D9EE0DFE19F2AC023F040DE.json",
+        "sha256": "99087A1042DAB85D8DF16479E61885D416FCF0223D9EE0DFE19F2AC023F040DE",
+        "bytes": 39497,
+        "assetSha256": "955F10EA37A9543A46D373377C9DE16087108CEC694C9D7AB39955737CDE0B2C",
+        "assetBytes": 29500,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-6DE29CAB653053CA87EDA03315082029A661CC5F7202339ED17B5A231CBCB649.json",
+        "sha256": "6DE29CAB653053CA87EDA03315082029A661CC5F7202339ED17B5A231CBCB649",
+        "bytes": 32409,
+        "assetSha256": "1279E14B070F4EBFB861E8EA859C2C42AFFFDF61D00EC8C422D5E7A10E02FCD2",
+        "assetBytes": 24184,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-4F6D96300D822595DDC66410D1861CE5AE20C7845F3DD0F77AFC721654821ACB.json",
+        "sha256": "4F6D96300D822595DDC66410D1861CE5AE20C7845F3DD0F77AFC721654821ACB",
+        "bytes": 12016,
+        "assetSha256": "E014E5B8420A451B6DD9497E707A00A792A4081C7215D6446EEEDC69582C544A",
+        "assetBytes": 8892,
+        "mime": "image/webp",
+        "width": 1024,
+        "height": 148
+      },
+      {
+        "path": "feixun-asset-BB8B4B198BAE3019D4FE8FCDFCC3DD0418FF1698C96912E95935FDADB956FECC.json",
+        "sha256": "BB8B4B198BAE3019D4FE8FCDFCC3DD0418FF1698C96912E95935FDADB956FECC",
+        "bytes": 11276,
+        "assetSha256": "D272049C3FB45687D740F6AAEF4C0259E012D4BFE3E33711FFF8DD1E6BF5D3CE",
+        "assetBytes": 8336,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-748E19FED6F174C5B168B4EC22587D0F2DC01E2A55EBDFA097529FD19FFA9CE3.json",
+        "sha256": "748E19FED6F174C5B168B4EC22587D0F2DC01E2A55EBDFA097529FD19FFA9CE3",
+        "bytes": 33505,
+        "assetSha256": "167587A4690245DDC310D2B6C679E96FBF3F9D1583D1E764656F700C05EC3B7E",
+        "assetBytes": 25008,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-DCB4CB45106F8CAFE01F3126A5C23CFF84EDF99874B70D007E12158A5E9FD2C0.json",
+        "sha256": "DCB4CB45106F8CAFE01F3126A5C23CFF84EDF99874B70D007E12158A5E9FD2C0",
+        "bytes": 35041,
+        "assetSha256": "04A8D683A22CB3B0C3073E23BCDE399DF2A069374EA542C0E7AE3D5D77416F78",
+        "assetBytes": 26158,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-C99C20AD458CC193B6E7D4AA31E328099CA9218845F6189E8AA1658E2035B143.json",
+        "sha256": "C99C20AD458CC193B6E7D4AA31E328099CA9218845F6189E8AA1658E2035B143",
+        "bytes": 36521,
+        "assetSha256": "15D73DB9EF91715E565B78E0182AEDC82E115C2BE7A8DC45723B1D9A957F329C",
+        "assetBytes": 27270,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-DF88A04B84902F67D53944D9FC83659EC57931BCD2C99AED19BC3537071BF971.json",
+        "sha256": "DF88A04B84902F67D53944D9FC83659EC57931BCD2C99AED19BC3537071BF971",
+        "bytes": 31081,
+        "assetSha256": "CB3B603CC292B5AFEFE8F0B3F28BF0D111D2459FE5304DE5CBB6FFC4D0B202CD",
+        "assetBytes": 23190,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-A568265872CFC8F6FF480F7B10EDEEC54E9DC57D67994EA9502EBAD917AFE4B6.json",
+        "sha256": "A568265872CFC8F6FF480F7B10EDEEC54E9DC57D67994EA9502EBAD917AFE4B6",
+        "bytes": 11824,
+        "assetSha256": "4F98705DBDE3C2AD781E67D818A189BD0595632568F20CC4F49B092634CC8E11",
+        "assetBytes": 8748,
+        "mime": "image/webp",
+        "width": 571,
+        "height": 1024
+      },
+      {
+        "path": "feixun-asset-DC7CC1A436E13CFDD79DCC9B64475D78719ECC8855BAA9E62551275A679C79D1.json",
+        "sha256": "DC7CC1A436E13CFDD79DCC9B64475D78719ECC8855BAA9E62551275A679C79D1",
+        "bytes": 37009,
+        "assetSha256": "AC87AF53D9B13B35C03E41213BD5AD4FE26E7950753C2FE04D53A3FC7595A0D4",
+        "assetBytes": 27636,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-88C8FA34B725C5333273E158641BCE80BF0C1223FCE495F9D7D870256BCB274E.json",
+        "sha256": "88C8FA34B725C5333273E158641BCE80BF0C1223FCE495F9D7D870256BCB274E",
+        "bytes": 12180,
+        "assetSha256": "EE9053EB369DAB455012AEDBC2F3B6D505323EE1553D93BF5E8A6D9B499FD2E2",
+        "assetBytes": 9014,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 230
+      },
+      {
+        "path": "feixun-asset-454FAC264898593FC345BFEF60D82A0C57D9CAED784CAEDB76FC33D0A38A1606.json",
+        "sha256": "454FAC264898593FC345BFEF60D82A0C57D9CAED784CAEDB76FC33D0A38A1606",
+        "bytes": 32881,
+        "assetSha256": "D36D6AA2D93E2D6DDEF4FEB608E89916A0CD286C056AA598F4CB071696A56C8C",
+        "assetBytes": 24540,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-59A7AEF909054A0848558351C7348A5E8270D45B47FD088FB73A612EE9E8DC6A.json",
+        "sha256": "59A7AEF909054A0848558351C7348A5E8270D45B47FD088FB73A612EE9E8DC6A",
+        "bytes": 33393,
+        "assetSha256": "710E4B01B14BC0E1657B1C9A5E84874155D7A7D16CF42D20B76CA951A2F96832",
+        "assetBytes": 24922,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-3BE96D223A23EAD670AA748480367FBB4BEFB470501554125C81376194F385FE.json",
+        "sha256": "3BE96D223A23EAD670AA748480367FBB4BEFB470501554125C81376194F385FE",
+        "bytes": 29253,
+        "assetSha256": "4933B45EABEDA92C02519F4B1F03D50422C2FE672977F529ED321CEC04A44185",
+        "assetBytes": 21818,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-0657600993B5E17C5FE2B324119AD8D54159D36904852565AB6ECD342FEC17AD.json",
+        "sha256": "0657600993B5E17C5FE2B324119AD8D54159D36904852565AB6ECD342FEC17AD",
+        "bytes": 40205,
+        "assetSha256": "5B06EAD1ADC92B40405D128B3E4883A02BEB79D27A448FCC7631528DA735AC7A",
+        "assetBytes": 30032,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-A0B46D873A880F6FF5A780E5EBE4D64BEBB1F06CB2D1FD7749D0D52B4A19692B.json",
+        "sha256": "A0B46D873A880F6FF5A780E5EBE4D64BEBB1F06CB2D1FD7749D0D52B4A19692B",
+        "bytes": 35617,
+        "assetSha256": "5F9192247E6F3D53C0E26AAE0A80F95CB67A7FC41878FC94E53459CF427AB441",
+        "assetBytes": 26592,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-0DEC2BE1FF58F5711D73B5EA203267FF8BEDEBC291F1893120A6A337411C8D78.json",
+        "sha256": "0DEC2BE1FF58F5711D73B5EA203267FF8BEDEBC291F1893120A6A337411C8D78",
+        "bytes": 32553,
+        "assetSha256": "11B419C62069AEC41137518BD22634D16B4928C70A2296B9445D0DD465F21BB6",
+        "assetBytes": 24294,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-A31043300934C9BCE1715E290121DB2F910D6EFF4989B9BA9F11F5227F8905DE.json",
+        "sha256": "A31043300934C9BCE1715E290121DB2F910D6EFF4989B9BA9F11F5227F8905DE",
+        "bytes": 25141,
+        "assetSha256": "BD122FDC34D4B0DBA0AEB4B102A051DBB588077387472E335820678C2548E785",
+        "assetBytes": 18734,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-FF345FBA53DCB210811B5C1F49190F95B52B7A08C08CF72FC437113B158E98E3.json",
+        "sha256": "FF345FBA53DCB210811B5C1F49190F95B52B7A08C08CF72FC437113B158E98E3",
+        "bytes": 37509,
+        "assetSha256": "026043DEFAE3175A16F3BB71787DDF1134EB83FC42D2164CF3D3680E4DA3E446",
+        "assetBytes": 28010,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-8DBC72E28368E5855150D28A1DC587F578A634B5C11D431910B388ED99FD4E28.json",
+        "sha256": "8DBC72E28368E5855150D28A1DC587F578A634B5C11D431910B388ED99FD4E28",
+        "bytes": 34437,
+        "assetSha256": "A3F894598F6E593F3CAC3600EF65487D337BB4B2E8A6FC21588869B0A4056791",
+        "assetBytes": 25706,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-AD08844B7F8447F8FC94D9D0D643920F298348606AC2D9DD40B2D4DC3984F455.json",
+        "sha256": "AD08844B7F8447F8FC94D9D0D643920F298348606AC2D9DD40B2D4DC3984F455",
+        "bytes": 33529,
+        "assetSha256": "91D4DC15BEB086A7DA0299742FC4CC792FB497CB88DAAC18775FB93FA9D22D9E",
+        "assetBytes": 25024,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-869A350D508711ADF78D8A9B4C6F39693CF8B9BCB9F895E98F03CCF6E99E5DD2.json",
+        "sha256": "869A350D508711ADF78D8A9B4C6F39693CF8B9BCB9F895E98F03CCF6E99E5DD2",
+        "bytes": 36297,
+        "assetSha256": "71EA33219D2F8E377B0A695D195E61F1C682B8BF44364F636226B4CEB0FA117E",
+        "assetBytes": 27102,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-168EA40B8798FB8FAA690E39735917E19DC4D54D1F5D3E0791EF1DE877F4F769.json",
+        "sha256": "168EA40B8798FB8FAA690E39735917E19DC4D54D1F5D3E0791EF1DE877F4F769",
+        "bytes": 33149,
+        "assetSha256": "DEF27E9E06EF4C72D2A680A8A893C98134B8ADC7A822380BE5892A1790057BE0",
+        "assetBytes": 24740,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-7EB1DF0D10DEF19F41957AF2BE113F3BDD65402AFEE98BF53441E468542A8B8E.json",
+        "sha256": "7EB1DF0D10DEF19F41957AF2BE113F3BDD65402AFEE98BF53441E468542A8B8E",
+        "bytes": 32577,
+        "assetSha256": "8ACA8203B26D86596DF8BC6A1349A0B9768CBAE84C0468E53FC06E42F9AF9B07",
+        "assetBytes": 24310,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-4879D4EEE04348488ED8238E7E081E8ACA3247948D5B842FB4F54FA498BAC34D.json",
+        "sha256": "4879D4EEE04348488ED8238E7E081E8ACA3247948D5B842FB4F54FA498BAC34D",
+        "bytes": 23549,
+        "assetSha256": "FFCBCF4E023D18669F2EE0678775F0EE537F723B2BCBF7DEB2EF233C1A7313E3",
+        "assetBytes": 17540,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-361B59102AD68CF2C8D88F42E100B27DC180F7E0DDAC8C9407C5612097F70A8E.json",
+        "sha256": "361B59102AD68CF2C8D88F42E100B27DC180F7E0DDAC8C9407C5612097F70A8E",
+        "bytes": 46273,
+        "assetSha256": "6D6003FE4E0E570545980EA62B3E2BCA44BAFB27BF1FC40A734EF47914AB7D64",
+        "assetBytes": 34584,
+        "mime": "image/webp",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-A24229A74C52068A5254E01E9FA68647B8EE54C3562FD5FA2310D37CB6203807.json",
+        "sha256": "A24229A74C52068A5254E01E9FA68647B8EE54C3562FD5FA2310D37CB6203807",
+        "bytes": 65360,
+        "assetSha256": "18B8DCD4E1A507CFB8588C94495A293834977E406A695980CA415B4B350CE56D",
+        "assetBytes": 48900,
+        "mime": "image/png",
+        "width": 704,
+        "height": 156
+      }
+    ]
   },
   "worldbookVersion": "0.2.2",
   "worldbookPath": "wuthering-waves-common-worldbook-v0.2.2.json",
