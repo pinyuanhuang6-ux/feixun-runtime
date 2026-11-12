@@ -1,6 +1,6 @@
 {
   "schema": "feixun-runtime-distribution/v1",
-  "publishedAt": "2026-11-09T16:45:27.731Z",
+  "publishedAt": "2026-11-12T18:02:58.994Z",
   "feixunSha256": "6551DADF7CABBAF36E3065ECDA95BEB13C3299DD5643EE6CA023A965F264707C",
   "feixunRuntime": {
     "schema": "feixun-runtime-artifacts/v1",
@@ -12,9 +12,9 @@
     "files": [
       {
         "role": "feixun",
-        "path": "feixun-core-23BE16ED9D5F05A9060EE94270F999C90A60358C54A62D3559EB139E5E267D3D.js",
-        "bytes": 945344,
-        "sha256": "23BE16ED9D5F05A9060EE94270F999C90A60358C54A62D3559EB139E5E267D3D"
+        "path": "feixun-core-5439CDE461C7DC754E9858BF7D0E9F742D2E7C5891D7705B28A4BA49F5641373.js",
+        "bytes": 956837,
+        "sha256": "5439CDE461C7DC754E9858BF7D0E9F742D2E7C5891D7705B28A4BA49F5641373"
       },
       {
         "role": "life",
@@ -26,7 +26,7 @@
   },
   "runtimeContract": {
     "schema": "feixun-runtime-contract/v1",
-    "feixunSha256": "23BE16ED9D5F05A9060EE94270F999C90A60358C54A62D3559EB139E5E267D3D",
+    "feixunSha256": "5439CDE461C7DC754E9858BF7D0E9F742D2E7C5891D7705B28A4BA49F5641373",
     "lifeSha256": "EEAE3AC3DA957E55AE6A2E40AE22F46A94697BD3F9FE0FAF57F9D6CE7FE307C5",
     "contactIds": [
       "10001",
@@ -79,13 +79,14 @@
       "10048",
       "10049",
       "10050",
-      "10051"
+      "10051",
+      "10052"
     ],
-    "contactRegistrySha256": "612FC2886D67F5407196533A7324541919B2C03E7C724CCC2D8D6AE986E3A790"
+    "contactRegistrySha256": "375312620E82840DEFEFE7D95E7B3725043BE7894CCA8EDB9750D1F70A28D658"
   },
   "assetRuntime": {
     "schema": "feixun-runtime-assets/v1",
-    "coreSha256": "23BE16ED9D5F05A9060EE94270F999C90A60358C54A62D3559EB139E5E267D3D",
+    "coreSha256": "5439CDE461C7DC754E9858BF7D0E9F742D2E7C5891D7705B28A4BA49F5641373",
     "files": [
       {
         "path": "feixun-asset-A853BFF3FB2E7B95C0D3D8FE145A65BD9A4CEDE378426D3D1BCECDD8AE21DF43.json",
@@ -113,6 +114,16 @@
         "bytes": 151905,
         "assetSha256": "B7E54030B4F888DFA203AD5A4804DD08BEFDBC5DDE8DCC176480FD125EAE155D",
         "assetBytes": 113807,
+        "mime": "image/png",
+        "width": 256,
+        "height": 256
+      },
+      {
+        "path": "feixun-asset-C08E2C0DAFE0F3FA3DF9D6327AD124BB5B3915D6F750EC16446974FB9058C3BB.json",
+        "sha256": "C08E2C0DAFE0F3FA3DF9D6327AD124BB5B3915D6F750EC16446974FB9058C3BB",
+        "bytes": 50580,
+        "assetSha256": "E2CDBAFE12EE2A55BAA4B9AD60A38F821B2824560650C13439F2B2637AA9856F",
+        "assetBytes": 37814,
         "mime": "image/png",
         "width": 256,
         "height": 256
